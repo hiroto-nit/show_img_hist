@@ -12,7 +12,6 @@ im = imread(img_url)
 st.image(im, caption='image from wikimedia commons',
          use_column_width=True)
 
-i = 0
 # show histgram of all colors
 hist_red, _ = np.histogram(im[:, :, 0], bins=64)
 hist_green, _ = np.histogram(im[:, :, 1], bins=64)
